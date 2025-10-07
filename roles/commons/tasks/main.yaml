@@ -1,0 +1,7 @@
+- name: Actualizamos el sistema
+  apt: 
+    update_cache: yes
+    upgrade: full
+    autoremove: yes
+    autoclean: yes
+  become: yes
